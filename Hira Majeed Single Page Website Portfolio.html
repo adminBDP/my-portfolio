@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hira Majeed - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #5e2ca5;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 24px;
+            margin: 10px 0 0 0;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        nav {
+            background-color: #5e2ca5;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            padding-top: 150px; /* To avoid content overlap with fixed nav */
+        }
+        .skills, .projects, .recommendations {
+            margin-bottom: 50px;
+        }
+        h2 {
+            font-size: 36px;
+            color: #5e2ca5;
+            margin-bottom: 20px;
+        }
+        .skill-item, .project-item, .recommendation-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .skill-item h3, .recommendation-item p {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .skill-item p {
+            font-size: 18px;
+            margin: 0;
+        }
+        .project-item p {
+            font-size: 18px;
+            margin: 10px 0 0 0;
+            text-align: left;
+        }
+        .recommendation-item {
+            font-style: italic;
+            text-align: left;
+        }
+
+        /* Popup styling */
+        #popup {
+            display: none;
+            background-color: #5e2ca5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            z-index: 1001;
+        }
+
+        /* Recommendation form */
+        .recommendation-form {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .recommendation-form input, .recommendation-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .recommendation-form button {
+            background-color: #5e2ca5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar with Home Icon -->
+<nav>
+    <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="40px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        Home
+    </a>
+</nav>
+
+<!-- Start of the Page -->
+<div id="home"></div>
+
+<header>
+    <h1>Hi, I'm Hira Majeed! 👋</h1>
+    <p>I have experience in all programming languages with 1 year of experience. Additionally, I have specialized experience in Artificial Intelligence Engineering, Business Intelligence, and Data Analytics. I'm an Artificial Intelligence Developer, almost about to graduate.</p>
+    <div class="contact-info">
+        <p>Email: HiraM@businessdevelopmentprodigy.com | Hira@wasitalladreaminc.com</p>
+        <p>Phone: 773-827-2000</p>
+    </div>
+</header>
+
+<div class="container">
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill-item">
+            <h3>Programming Languages</h3>
+            <p>All programming languages - 1 year of experience</p>
+        </div>
+        <div class="skill-item">
+            <h3>Artificial Intelligence Engineering</h3>
+            <p>Less than a year of experience</p>
+        </div>
+        <div class="skill-item">
+            <h3>Business Intelligence</h3>
+            <p>1 year of experience</p>
+        </div>
+        <div class="skill-item">
+            <h3>Data Analytics</h3>
+            <p>Less than a year of experience</p>
+        </div>
+        <div class="skill-item">
+            <h3>Artificial Intelligence Developer</h3>
+            <p>Less than a year of experience - Almost about to graduate</p>
+        </div>
+        <div class="skill-item">
+            <h3>Machine Learning</h3>
+            <p>6 months of experience</p>
+        </div>
+        <div class="skill-item">
+            <h3>Deep Learning</h3>
+            <p>6 months of experience</p>
+        </div>
+        <div class="skill-item">
+            <h3>Cloud Computing (AWS, Azure)</h3>
+            <p>1 year of experience</p>
+        </div>
+        <div class="skill-item">
+            <h3>Data Visualization (Power BI, Tableau)</h3>
+            <p>1 year of experience</p>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>AI-Based Fraud Detection System</h3>
+            <p>Developed an AI-driven system that successfully detected fraudulent transactions in real-time using machine learning algorithms, saving the client over $1M in potential losses.</p>
+        </div>
+        <div class="project-item">
+            <h3>Smart Business Intelligence Dashboard</h3>
+            <p>Designed and deployed a comprehensive BI dashboard for a retail company, leveraging Power BI and Tableau to streamline data analysis and decision-making, improving operational efficiency by 25%.</p>
+        </div>
+        <div class="project-item">
+            <h3>Automated Customer Insights Platform</h3>
+            <p>Created an automated data analytics platform that processed large customer datasets, providing actionable insights that improved customer retention rates by 15%.</p>
+        </div>
+    </section>
+
+    <section class="recommendations">
+        <h2>Recommendations</h2>
+        <div id="recommendations">
+            <div class="recommendation-item">
+                <p>"Hira is a quick learner and a highly skilled developer. Her dedication to AI projects is remarkable, and she consistently delivers high-quality work on time."</p>
+            </div>
+            <div class="recommendation-item">
+                <p>"Working with Hira has been an absolute pleasure. Her expertise in data analytics and business intelligence has significantly improved our decision-making process."</p>
+            </div>
+            <div class="recommendation-item">
+                <p>"Hira's AI-driven solutions helped us save time and money. Her deep understanding of both the technical and business aspects of AI is invaluable."</p>
+            </div>
+        </div>
+
+        <!-- Recommendation Form -->
+        <div class="recommendation-form">
+            <h3>Leave a Recommendation</h3>
+            <input type="text" id="name" placeholder="Your Name (Optional)">
+            <textarea id="recommendationText" rows="5" placeholder="Your Recommendation"></textarea>
+            <button onclick="addRecommendation()">Submit</button>
+        </div>
+    </section>
+</div>
+
+<!-- Popup for Confirmation -->
+<div id="popup">
+    <p>Your recommendation has been successfully submitted!</p>
+</div>
+
+<!-- Script -->
+<script>
+    function addRecommendation() {
+        const recommendationText = document.getElementById("recommendationText").value;
+        const name = document
